@@ -2,482 +2,695 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jayesh_Yadav_Portfolio</title>
+        <title>Jayesh Yadav | Software Engineer</title>
+        <meta
+            name="description"
+            content="Jayesh Yadav is a software engineer working with JavaScript, TypeScript, React, Vue, Node.js and PostgreSQL. Experience, projects and contact details."
+        />
+        <meta name="theme-color" content="#090d12" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Jayesh Yadav | Software Engineer" />
+        <meta
+            property="og:description"
+            content="Software engineer building scalable web applications, REST APIs and real-time analytics."
+        />
+        <meta property="og:url" content="https://jayeshyadav07.github.io/" />
+        <link rel="icon" type="image/png" href="./images/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        />
         <link rel="stylesheet" href="index.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-        />
+        <script>
+            document.documentElement.classList.add("js");
+        </script>
     </head>
 
     <body>
-        <!-- ////Hamburger////// -->
+        <a class="skip-link" href="#main">Skip to content</a>
 
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >×</a
-            >
-            <div>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a href="./images/Jayesh-Yadav-Resume.pdf" download
-                    >Resume <i class="fa fa-download"></i
-                ></a>
-            </div>
-        </div>
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button>
-        </div>
+        <!-- Header -->
+        <header class="site-header" id="nav-menu">
+            <div class="wrap header-inner">
+                <a class="brand" href="#home" aria-label="Jayesh Yadav, home">
+                    <span class="brand-mark">&lt;</span>jayesh<span class="brand-dot">.</span>yadav<span class="brand-mark">/&gt;</span>
+                </a>
 
-        <!-- //////////////////////////////////////// -->
+                <button
+                    class="nav-toggle"
+                    id="nav-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                    aria-label="Open menu"
+                >
+                    <span></span><span></span><span></span>
+                </button>
 
-        <!-- /////NavBAR//////////////////////////// -->
-
-        <div id="nav-menu">
-            <p class="name">< Jayesh Yadav /></p>
-            <div>
-                <a href="#home" class="nav-link home">Home</a>
-                <a href="#about" class="nav-link about">About</a>
-                <a href="#skills" class="nav-link skills">Skills</a>
-                <a href="#projects" class="nav-link projects">Projects</a>
-                <a href="#contact" class="nav-link contact">Contact</a>
-                <button id="resume-button-1">
+                <nav class="site-nav" id="site-nav" aria-label="Main">
+                    <a href="#about" class="nav-link about">About</a>
+                    <a href="#journey" class="nav-link journey">Journey</a>
+                    <a href="#skills" class="nav-link skills">Skills</a>
+                    <a href="#projects" class="nav-link projects">Projects</a>
+                    <a href="#contact" class="nav-link contact">Contact</a>
                     <a
                         href="./images/Jayesh-Yadav-Resume.pdf"
-                        class="nav-link resume"
+                        class="btn btn-outline btn-small resume"
                         id="resume-link-1"
-                        download
-                        >Resume <i class="fa fa-download"></i
-                    ></a>
-                </button>
+                        target="_blank"
+                        rel="noopener"
+                        >Resume <span aria-hidden="true">↗</span></a
+                    >
+                </nav>
             </div>
-        </div>
+        </header>
 
-        <main>
-            <!-- /////////////HOME/////////////////////// -->
-
-            <div id="width">
-                <div id="home">
-                    <div>
-                        <h1>Hi 👋 my name is</h1>
-                        <p id="user-detail-name">Jayesh Yadav</p>
-                        <h1 id="demo">
-                            <span id="demo0"> And I'm a </span
-                            ><span id="demo1"></span>
-                        </h1>
+        <main id="main">
+            <!-- Hero -->
+            <section class="hero" id="home">
+                <div class="wrap hero-inner">
+                    <div class="blob-photo">
+                        <img
+                            class="home-img"
+                            src="./images/jayesh.webp"
+                            width="720"
+                            height="820"
+                            alt="Portrait of Jayesh Yadav"
+                        />
                     </div>
-
-                    <img class="home-img" src="./images/Jayesh.png" alt="" />
+                    <h1>
+                        Hi. I'm <span id="user-detail-name">Jayesh</span>.<br />
+                        A software engineer.
+                    </h1>
+                    <p class="hero-lede">
+                        I design, ship and maintain web applications end to end:
+                        responsive interfaces in React and Vue, secure backend
+                        services in Node.js, and the databases and containers
+                        underneath them.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-solid" href="#projects">See my work</a>
+                        <a class="btn btn-outline" href="#contact">Get in touch</a>
+                    </div>
+                    <svg class="sparkle sparkle-a" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 1c.8 6.2 4.800 10.200 11 11-6.200.8-10.200 4.800-11 11-.8-6.200-4.800-10.200-11-11 6.200-.8 10.200-4.800 11-11z" />
+                    </svg>
+                    <svg class="sparkle sparkle-b" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 1c.8 6.2 4.800 10.200 11 11-6.200.8-10.200 4.800-11 11-.8-6.200-4.800-10.200-11-11 6.200-.8 10.200-4.800 11-11z" />
+                    </svg>
                 </div>
 
-                <!-- ////////////////////About Section/////////////////// -->
+                <div class="wrap">
+                    <dl class="stats">
+                        <div class="stat">
+                            <dt>REST APIs built and maintained</dt>
+                            <dd>30</dd>
+                        </div>
+                        <div class="stat">
+                            <dt>Faster environment setup with Docker</dt>
+                            <dd>60%</dd>
+                        </div>
+                        <div class="stat">
+                            <dt>DSA problems solved</dt>
+                            <dd>250+</dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
 
-                <div id="about" class="about section">
-                    <h2 class="mid">About</h2>
-                    <hr />
-                    <p id="user-detail-intro">
-                        A versatile software developer with expertise in front-end technologies like HTML, CSS, JavaScript, and back-end technologies like NodeJS and Express. With a solid understanding of web development concepts and a passion for delivering high-quality work, capable of designing, developing, and maintaining web applications that are efficient, user-friendly, and responsive.
-                    </p>
+            <!-- About -->
+            <section class="section" id="about">
+                <div class="wrap">
+                    <header class="section-head reveal">
+                        <p class="route"><span class="route-method">GET</span> /about</p>
+                        <h2>About</h2>
+                    </header>
+                    <div class="about-body reveal">
+                        <p class="about-lead" id="user-detail-intro">
+                            Software engineer with 2+ years of experience designing,
+                            developing and maintaining scalable, high-performance web
+                            applications.
+                        </p>
+                        <div class="about-text">
+                            <p>
+                                Most of my work has been product engineering at Symbolist
+                                Technology, where I built an affiliate management system
+                                with real-time referral tracking, tuned ClickHouse for
+                                analytics dashboards, and put magic-link authentication
+                                in front of it all.
+                            </p>
+                            <p>
+                                I work mainly in JavaScript and TypeScript, with React or
+                                Vue on the front end and Node.js with Express behind it.
+                                I care about fast queries, secure defaults and
+                                deployments that behave the same on every machine.
+                            </p>
+                            <div class="about-actions">
+                                <a
+                                    class="btn btn-solid"
+                                    id="resume-link-2"
+                                    href="./images/Jayesh-Yadav-Resume.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >View resume <span aria-hidden="true">↗</span></a
+                                >
+                                <a
+                                    class="text-link"
+                                    href="./images/Jayesh-Yadav-Resume.pdf"
+                                    download
+                                    >Download PDF</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <div id="aboutflex">
-                        <button id="resume-button-2">
+            <!-- Journey -->
+            <section class="section journey" id="journey">
+                <div class="wrap">
+                    <header class="journey-head reveal">
+                        <h2>My journey</h2>
+                    </header>
+
+                    <div class="connector reveal">
+                        <p class="note">it started with a degree in IT, in Mumbai</p>
+                        <svg viewBox="0 0 220 150" aria-hidden="true">
+                            <path d="M150 6 C 150 48, 44 30, 52 78 S 168 96, 110 144" />
+                        </svg>
+                    </div>
+
+                    <article class="stop stop-a reveal">
+                        <div class="stop-text">
+                            <h3>College</h3>
+                            <p class="stop-dates">Graduated 2022</p>
+                            <p>
+                                I studied for a B.Sc. in Information Technology at
+                                Mulund College of Commerce, Mumbai.
+                            </p>
+                        </div>
+                        <div class="stop-cards">
+                            <div class="mini-card">
+                                <p class="mini-label">Degree</p>
+                                <p>B.Sc. Information Technology</p>
+                            </div>
+                            <div class="mini-card">
+                                <p class="mini-label">CGPA</p>
+                                <p>7.6 / 10</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="connector connector-flip reveal">
+                        <p class="note">my first engineering job, Sep 2023</p>
+                        <svg viewBox="0 0 220 150" aria-hidden="true">
+                            <path d="M70 6 C 70 48, 176 30, 168 78 S 52 96, 110 144" />
+                        </svg>
+                    </div>
+
+                    <article class="stop stop-b stop-flip reveal">
+                        <div class="stop-text">
+                            <h3>Symbolist Technology</h3>
+                            <p class="stop-dates">Sep 2023 – Jul 2026 · Full Stack Developer</p>
+                            <p>
+                                Nearly three years of product engineering: building an
+                                affiliate platform, the analytics behind it, and the
+                                APIs, authentication and containers that keep it
+                                running.
+                            </p>
+                        </div>
+                        <ul class="stop-cards stop-cards-grid">
+                            <li class="mini-card">
+                                Built a scalable <strong>affiliate management system</strong>
+                                with real-time referral tracking and automated
+                                commission processing.
+                            </li>
+                            <li class="mini-card">
+                                Integrated and optimized <strong>ClickHouse</strong> for
+                                high-volume analytics and real-time dashboards.
+                            </li>
+                            <li class="mini-card">
+                                Implemented <strong>magic-link and token-based</strong>
+                                authentication and authorization.
+                            </li>
+                            <li class="mini-card">
+                                Developed and maintained <strong>30 RESTful APIs</strong>
+                                and backend integrations.
+                            </li>
+                            <li class="mini-card">
+                                Containerized apps with <strong>Docker</strong>, cutting
+                                environment provisioning time by 60%.
+                            </li>
+                            <li class="mini-card">
+                                Diagnosed and fixed performance bottlenecks, slow
+                                queries and security vulnerabilities.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <div class="connector reveal">
+                        <p class="note">now learning Java + Spring</p>
+                        <svg viewBox="0 0 220 150" aria-hidden="true">
+                            <path d="M150 6 C 150 48, 44 30, 52 78 S 168 96, 110 144" />
+                        </svg>
+                    </div>
+
+                    <article class="stop stop-c reveal">
+                        <div class="stop-text">
+                            <h3>Today</h3>
+                            <p class="stop-dates">2026 · Getting ready for what's next</p>
+                            <p>
+                                I'm extending my backend range into Java, Spring Boot and
+                                microservices, along with Kafka, AWS and Kubernetes, for
+                                my next role as a software engineer.
+                            </p>
+                            <a class="text-link" href="#skills">See what I'm learning</a>
+                        </div>
+                        <div class="stop-cards">
+                            <div class="mini-card">
+                                <p class="mini-label">Problem solving</p>
+                                <p>250+ data structures and algorithms problems solved.</p>
+                            </div>
+                            <div class="mini-card">
+                                <p class="mini-label">Hackathon</p>
+                                <p>
+                                    Took part in the freeCodeCamp Hackathon, building
+                                    real-world projects with a team on a deadline.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="section" id="skills">
+                <div class="wrap">
+                    <header class="section-head reveal">
+                        <p class="route"><span class="route-method">GET</span> /skills</p>
+                        <h2>Skills</h2>
+                    </header>
+
+                    <div class="skill-table reveal">
+                        <div class="skill-row">
+                            <h3>Languages</h3>
+                            <ul class="chips">
+                                <li class="skills-card"><span class="skills-card-name">JavaScript</span></li>
+                                <li class="skills-card"><span class="skills-card-name">TypeScript</span></li>
+                                <li class="skills-card"><span class="skills-card-name">PHP</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-row">
+                            <h3>Frontend</h3>
+                            <ul class="chips">
+                                <li class="skills-card"><span class="skills-card-name">React</span></li>
+                                <li class="skills-card"><span class="skills-card-name">Vue</span></li>
+                                <li class="skills-card"><span class="skills-card-name">HTML5</span></li>
+                                <li class="skills-card"><span class="skills-card-name">CSS3</span></li>
+                                <li class="skills-card"><span class="skills-card-name">Tailwind CSS</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-row">
+                            <h3>Backend</h3>
+                            <ul class="chips">
+                                <li class="skills-card"><span class="skills-card-name">Node.js</span></li>
+                                <li class="skills-card"><span class="skills-card-name">Express.js</span></li>
+                                <li class="skills-card"><span class="skills-card-name">REST APIs</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-row">
+                            <h3>Databases</h3>
+                            <ul class="chips">
+                                <li class="skills-card"><span class="skills-card-name">PostgreSQL</span></li>
+                                <li class="skills-card"><span class="skills-card-name">MongoDB</span></li>
+                                <li class="skills-card"><span class="skills-card-name">MySQL</span></li>
+                                <li class="skills-card"><span class="skills-card-name">ClickHouse</span></li>
+                            </ul>
+                        </div>
+                        <div class="skill-row">
+                            <h3>DevOps &amp; tools</h3>
+                            <ul class="chips">
+                                <li class="skills-card"><span class="skills-card-name">Docker</span></li>
+                                <li class="skills-card"><span class="skills-card-name">Linux</span></li>
+                                <li class="skills-card"><span class="skills-card-name">Ansible</span></li>
+                                <li class="skills-card"><span class="skills-card-name">Git</span></li>
+                                <li class="skills-card"><span class="skills-card-name">GitHub</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="learning reveal">
+                        <div class="learning-head">
+                            <h3 class="subhead">Currently learning</h3>
+                            <p>
+                                I'm extending my backend range into the Java and Spring
+                                ecosystem, along with the messaging, cloud and
+                                observability tooling around it.
+                            </p>
+                        </div>
+                        <div class="skill-table">
+                            <div class="skill-row">
+                                <h4>Java &amp; Spring</h4>
+                                <ul class="chips chips-learning">
+                                    <li>Java (Core, 8/11/17)</li>
+                                    <li>Spring Boot</li>
+                                    <li>Spring Security</li>
+                                    <li>JPA / Hibernate</li>
+                                    <li>Multithreading &amp; concurrency</li>
+                                </ul>
+                            </div>
+                            <div class="skill-row">
+                                <h4>Architecture</h4>
+                                <ul class="chips chips-learning">
+                                    <li>Microservices</li>
+                                    <li>Design patterns / LLD</li>
+                                    <li>Kafka</li>
+                                    <li>RabbitMQ</li>
+                                    <li>Redis caching</li>
+                                </ul>
+                            </div>
+                            <div class="skill-row">
+                                <h4>Cloud &amp; delivery</h4>
+                                <ul class="chips chips-learning">
+                                    <li>AWS</li>
+                                    <li>Kubernetes</li>
+                                    <li>CI/CD with Jenkins</li>
+                                </ul>
+                            </div>
+                            <div class="skill-row">
+                                <h4>Monitoring &amp; testing</h4>
+                                <ul class="chips chips-learning">
+                                    <li>ELK</li>
+                                    <li>Prometheus</li>
+                                    <li>Grafana</li>
+                                    <li>JUnit</li>
+                                    <li>Integration testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="section" id="projects">
+                <div class="wrap">
+                    <header class="section-head reveal">
+                        <p class="route"><span class="route-method">GET</span> /projects</p>
+                        <h2>Projects</h2>
+                    </header>
+
+                    <div class="featured">
+                        <article class="project-card feature reveal">
+                            <p class="feature-index">01</p>
+                            <h3 class="project-title">QuickShop</h3>
+                            <p class="project-description">
+                                A full-stack e-commerce store with product search and
+                                category filters, a cart and checkout flow, Razorpay
+                                payments, order history, and an admin area for products,
+                                orders, users and analytics.
+                            </p>
+                            <ul class="chips chips-small project-tech-stack">
+                                <li>React</li>
+                                <li>Vite</li>
+                                <li>Tailwind CSS</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>Razorpay</li>
+                            </ul>
+                            <div class="project-links">
+                                <a
+                                    class="project-deployed-link"
+                                    href="https://quick-shopx100.vercel.app"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Live site <span aria-hidden="true">↗</span></a
+                                >
+                                <a
+                                    class="project-github-link"
+                                    href="https://github.com/jayeshyadav07/QuickShop"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Source <span aria-hidden="true">↗</span></a
+                                >
+                            </div>
+                        </article>
+
+                        <article class="project-card feature reveal">
+                            <p class="feature-index">02</p>
+                            <h3 class="project-title">Job Portal</h3>
+                            <p class="project-description">
+                                A hiring platform where recruiters post jobs and students
+                                apply. JWT authentication, role-based access control, and
+                                CRUD for jobs and applications over an Express and
+                                MongoDB REST API.
+                            </p>
+                            <ul class="chips chips-small project-tech-stack">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Tailwind CSS</li>
+                                <li>shadcn/ui</li>
+                            </ul>
+                            <div class="project-links">
+                                <a
+                                    class="project-github-link"
+                                    href="https://github.com/jayeshyadav07/Job-Portal"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Source <span aria-hidden="true">↗</span></a
+                                >
+                            </div>
+                        </article>
+
+                        <article class="project-card feature reveal">
+                            <p class="feature-index">03</p>
+                            <h3 class="project-title">Expense Tracker</h3>
+                            <p class="project-description">
+                                Log income and expenses, then see where the money goes.
+                                Charts break spending down by month and by category, in a
+                                responsive interface that works on any device.
+                            </p>
+                            <ul class="chips chips-small project-tech-stack">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>Chart.js</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <h3 class="subhead reveal">Earlier work</h3>
+                    <div class="archive">
+                        <article class="project-card archive-card reveal">
                             <a
-                                href="./images/Jayesh-Yadav-Resume.pdf"
-                                class="nav-link resume"
-                                id="resume-link-2"
-                                download
-                                >Resume <i class="fa fa-download"></i
-                            ></a>
-                        </button>
-                        <div id="con">
-                            <a
+                                class="archive-shot"
+                                href="https://dentcare24x7.netlify.app/"
                                 target="_blank"
-                                href="https://www.linkedin.com/in/yadav-jayesh/"
-                                ><img
-                                    src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                                    alt=""
-                            /></a>
-                            <a
-                                target="_blank"
-                                href="https://github.com/JayeshYadav07"
+                                rel="noopener"
+                                tabindex="-1"
+                                aria-hidden="true"
                             >
                                 <img
-                                    src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+                                    src="./images/dentcare.webp"
+                                    width="1200"
+                                    height="592"
+                                    loading="lazy"
                                     alt=""
-                            /></a>
-                            <a target="_blank" href="jayeshyadav8080@gmail.com"
-                                ><img
-                                    src="https://www.vectorlogo.zone/logos/gmail/gmail-tile.svg"
-                                    alt=""
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ************************************************SKILLS****************************************************************** -->
-                <div id="skills">
-                    <h2 class="mid">Skills</h2>
-                    <hr />
-                    <div id="grid">
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">HTML</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">CSS</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">JavaScript</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">NodeJS</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://rohithanss.github.io/skills/expressJs.png"
-                                alt=""
-                            />
-                            <p class="skills-card-name">ExpressJS</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">MongoDB</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://www.vectorlogo.zone/logos/redis/redis-icon.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">Redis</p>
-                        </div>
-                </div>
-
-                <div id="skills" style="margin-top: 100px;">
-                    <h2 class="mid">Tools</h2>
-                    <hr />
-                    <div id="grid">
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">Git</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">Github</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">Vs Code</p>
-                        </div>
-                        <div class="skills-card">
-                            <img
-                                class="skills-card-img"
-                                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-                                alt=""
-                            />
-                            <p class="skills-card-name">Postman</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- **************************************PROJECTS************************************************************************ -->
-
-                <!-- **************************************PROJECTS************************************************************************ -->
-
-                <div id="projects">
-                    <h2 class="mid">Projects</h2>
-                    <hr />
-                    <div>
-                        <div class="project-card">
-                            <img src="./images/dentcare.png" alt="" />
-                            <p class="project-title">Dentcare</p>
-                            <div class="project-description">
-                                <p>
-                                    <b> Dentcare : </b>A dental care booking
-                                    system is a software application that
-                                    enables patients to schedule appointments
-                                    with dental care providers, such as dentists
-                                    or dental clinics. It streamlines the
-                                    appointment booking process, improves
-                                    efficiency, and enhances the overall patient
-                                    experience.
+                                />
+                            </a>
+                            <div class="archive-body">
+                                <h4 class="project-title">Dentcare</h4>
+                                <p class="project-description">
+                                    Appointment booking for dental clinics, with JWT
+                                    login, service and doctor pages, and an admin panel.
                                 </p>
-                                <p>
-                                    <b> Features : </b> Login, Sign up
-                                    functionality, JW-Authentication, service
-                                    page, doctors page, appointment booking
-                                    page, Admin page.
+                                <p class="project-tech-stack stack-line">
+                                    HTML · CSS · JavaScript · Node.js · Express · MongoDB
                                 </p>
-                            </div>
-                            <div class="techstack">
-                                <p><b>Tech Stack : </b></p>
-                                <p class="project-tech-stack">
-                                    HTML,CSS, JavaScript, NodeJs, Express,
-                                    MongoDB.
-                                </p>
-                            </div>
-                            <div class="projectlinks">
-                                <br />
                                 <a
-                                    target="_blank"
-                                    href="https://github.com/JayeshYadav07/Dental-Booking-Appointment-System/tree/main"
-                                    class="project-github-link"
-                                    >Github</a
-                                >
-                                <a
-                                    target="_blank"
+                                    class="project-deployed-link text-link"
                                     href="https://dentcare24x7.netlify.app/"
-                                    class="project-deployed-link"
-                                    >Deployed</a
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Live demo <span aria-hidden="true">↗</span></a
                                 >
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="./images/firnessBazzar.png" alt="" />
-                            <p class="project-title">FitnessBazzer</p>
-                            <div class="project-description">
-                                <p>
-                                    <b> FitnessBazzer : </b>This is a clone of
-                                    the Indian online marketplace for health and
-                                    wellness products, HealthKart. The aim of
-                                    this clone is to provide a similar platform
-                                    for consumers to access high-quality health
-                                    and wellness products.
+                        </article>
+
+                        <article class="project-card archive-card reveal">
+                            <a
+                                class="archive-shot"
+                                href="https://clone-healthkart.netlify.app/"
+                                target="_blank"
+                                rel="noopener"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            >
+                                <img
+                                    src="./images/fitnessbazzer.webp"
+                                    width="1200"
+                                    height="572"
+                                    loading="lazy"
+                                    alt=""
+                                />
+                            </a>
+                            <div class="archive-body">
+                                <h4 class="project-title">FitnessBazzer</h4>
+                                <p class="project-description">
+                                    A health and wellness store modelled on HealthKart,
+                                    with accounts, a cart, checkout and payment pages.
                                 </p>
-                                <p>
-                                    <b> Features : </b> Home page, product page,
-                                    Account page Log-In,
-                                    Sign-Up,JW-Authentication, Cart page
-                                    Checkout and Payment page
+                                <p class="project-tech-stack stack-line">
+                                    HTML · CSS · JavaScript · Node.js · Express · MongoDB
                                 </p>
-                            </div>
-                            <div class="techstack">
-                                <p><b>Tech Stack : </b></p>
-                                <p class="project-tech-stack">
-                                    HTML,CSS, JavaScript, NodeJs, Express,
-                                    MongoDB.
-                                </p>
-                            </div>
-                            <div class="projectlinks">
-                                <br />
                                 <a
-                                    target="_blank"
-                                    href="https://github.com/JayeshYadav07/HealthKart-Clone"
-                                    class="project-github-link"
-                                    >Github</a
-                                >
-                                <a
-                                    target="_blank"
+                                    class="project-deployed-link text-link"
                                     href="https://clone-healthkart.netlify.app/"
-                                    class="project-deployed-link"
-                                    >Deployed</a
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Live demo <span aria-hidden="true">↗</span></a
                                 >
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="project-card">
-                            <img src="./images/HOTWHEELS.png" alt="" />
-                            <p class="project-title">Advacnce Auto Parts</p>
-                            <div class="project-description">
-                                <p>
-                                    <b>Advacnce Auto Parts : </b> Advance Auto
-                                    Parts, Inc. is a leading automotive
-                                    aftermarket parts provider that serves both
-                                    professional installer and do-it-yourself
-                                    customers.
+                        <article class="project-card archive-card reveal">
+                            <a
+                                class="archive-shot"
+                                href="https://advance-auto-parts.netlify.app/"
+                                target="_blank"
+                                rel="noopener"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            >
+                                <img
+                                    src="./images/advance-auto-parts.webp"
+                                    width="1200"
+                                    height="595"
+                                    loading="lazy"
+                                    alt=""
+                                />
+                            </a>
+                            <div class="archive-body">
+                                <h4 class="project-title">Advance Auto Parts</h4>
+                                <p class="project-description">
+                                    An auto parts storefront clone with product pages,
+                                    sign-up and login, checkout, and admin CRUD.
                                 </p>
-                                <p>
-                                    <b> Features : </b>Home page, product page,
-                                    Account page Log-In, CRUD Home page, product
-                                    page, Account page Log-In, Sign-Up, Admin
-                                    page CRUD,page Checkout and Payment page.
+                                <p class="project-tech-stack stack-line">
+                                    HTML · CSS · JavaScript · APIs
                                 </p>
-                            </div>
-                            <div class="techstack">
-                                <p><b>Tech Stack : </b></p>
-                                <p class="project-tech-stack">
-                                    HTML, CSS, JavaScript, APIs
-                                </p>
-                            </div>
-                            <div class="projectlinks">
-                                <br />
                                 <a
-                                    target="_blank"
-                                    href="https://github.com/JayeshYadav07/advance_auto_parts"
-                                    class="project-github-link"
-                                    >Github</a
-                                >
-                                <a
-                                    target="_blank"
+                                    class="project-deployed-link text-link"
                                     href="https://advance-auto-parts.netlify.app/"
-                                    class="project-deployed-link"
-                                    >Deployed</a
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Live demo <span aria-hidden="true">↗</span></a
                                 >
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="project-card">
-                            <img src="./images/nordwave.png" alt="" />
-                            <p class="project-title">NordWave</p>
-                            <div class="project-description">
-                                <p>
-                                    <b>NordWave</b> Clone of nordstrome
-                                    website.Free shipping. Free returns. All the
-                                    time. Shop online for shoes, clothing,
-                                    jewelry, dresses, makeup and more from top
-                                    brands.
+                        <article class="project-card archive-card reveal">
+                            <a
+                                class="archive-shot"
+                                href="https://nordstrome-clone.netlify.app/"
+                                target="_blank"
+                                rel="noopener"
+                                tabindex="-1"
+                                aria-hidden="true"
+                            >
+                                <img
+                                    src="./images/nordwave.webp"
+                                    width="1200"
+                                    height="592"
+                                    loading="lazy"
+                                    alt=""
+                                />
+                            </a>
+                            <div class="archive-body">
+                                <h4 class="project-title">NordWave</h4>
+                                <p class="project-description">
+                                    A fashion storefront modelled on Nordstrom, with
+                                    home, product, cart and checkout pages.
                                 </p>
-                                <p>
-                                    <b> Features : </b>Home page, Product page,
-                                    Cart page,Checkout page, Navbar.
+                                <p class="project-tech-stack stack-line">
+                                    HTML · CSS · JavaScript
                                 </p>
-                            </div>
-                            <div class="techstack">
-                                <p><b>Tech Stack : </b></p>
-                                <p class="project-tech-stack">
-                                    HTML, CSS, JavaScript
-                                </p>
-                            </div>
-                            <div class="projectlinks">
-                                <br />
                                 <a
-                                    target="_blank"
-                                    href="https://github.com/JayeshYadav07/noiseless-wire-1929"
-                                    class="project-github-link"
-                                    >Github</a
-                                >
-                                <a
-                                    target="_blank"
+                                    class="project-deployed-link text-link"
                                     href="https://nordstrome-clone.netlify.app/"
-                                    class="project-deployed-link"
-                                    >Deployed</a
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Live demo <span aria-hidden="true">↗</span></a
                                 >
                             </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section contact" id="contact">
+                <div class="wrap">
+                    <header class="section-head reveal">
+                        <p class="route"><span class="route-method">POST</span> /contact</p>
+                        <h2>Let's talk</h2>
+                    </header>
+
+                    <div class="contact-body reveal">
+                        <div class="contact-pitch">
+                            <p>
+                                Have a role or a project in mind? Email is the fastest
+                                way to reach me.
+                            </p>
+                            <a
+                                class="contact-email"
+                                id="contact-email"
+                                href="mailto:jayeshyadav8080@gmail.com"
+                                >jayeshyadav8080@gmail.com</a
+                            >
                         </div>
+
+                        <ul class="contact-list">
+                            <li>
+                                <span class="contact-label">LinkedIn</span>
+                                <a
+                                    id="contact-linkedin"
+                                    href="https://www.linkedin.com/in/yadav-jayesh/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >in/yadav-jayesh <span aria-hidden="true">↗</span></a
+                                >
+                            </li>
+                            <li>
+                                <span class="contact-label">GitHub</span>
+                                <a
+                                    id="contact-github"
+                                    href="https://github.com/jayeshyadav07"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >jayeshyadav07 <span aria-hidden="true">↗</span></a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!-- *********************************************GIT HUB SECTION*********************************** -->
-                <div id="stats">
-                    <h2 class="mid">Github Stats</h2>
-                    <hr />
-                    <div>
-                        <img id="github-top-langs"
-                        src="https://github-readme-stats.vercel.app/api/top-langs?username=JayeshYadav07&show_icons=true&locale=en&layout=compact""
-                        alt="">
-
-                        <div id="statsimg">
-                            <img
-                                id="github-stats-card"
-                                src="https://github-readme-stats.vercel.app/api?username=JayeshYadav07&show_icons=true&locale=en"
-                                alt=""
-                            />
-                            <img
-                                id="github-streak-stats"
-                                src="https://github-readme-streak-stats.herokuapp.com?user=JayeshYadav07"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div id="calendar">
-                    <h2 class="mid">Github Calendar</h2>
-                    <hr />
-                    <div
-                        id="min-height-c"
-                        class="react-activity-calendar calendar"
-                    >
-                        Loading the data just for you.
-                    </div>
-                </div>
-
-                <!-- *****************************************CONTACTS************************************************* -->
-                <div id="contact">
-                    <h2 class="mid">Contact</h2>
-                    <hr />
-
-                    <div class="contactflex">
-                        <a
-                            target="_blank"
-                            id="contact-github"
-                            href="https://github.com/JayeshYadav07"
-                            ><p><i class="fa fa-github"></i>&nbsp; Github</p></a
-                        >
-                    </div>
-                    <div class="contactflex">
-                        <a
-                            target="_blank"
-                            id="contact-linkedin"
-                            href="https://www.linkedin.com/in/yadav-jayesh/"
-                            ><p>
-                                <i class="fa fa-linkedin"></i> &nbsp; Linkedin
-                            </p></a
-                        >
-                    </div>
-                    <div class="contactflex">
-                        <a href="">
-                            <p id="contact-phone">
-                                <i class="fa fa-phone"></i>&nbsp; 7900139651
-                            </p></a
-                        >
-                    </div>
-                    <div class="contactflex">
-                        <a target="_blank" id="contact-email"
-                            ><p>
-                                <i class="fa fa-envelope"></i> &nbsp;
-                                jayeshyadav8080@gmail.com
-                            </p></a
-                        >
-                    </div>
-                    <p class="name">< Jayesh Yadav/></p>
-                </div>
-            </div>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="wrap footer-inner">
+                <p>© <span id="year">2026</span> Jayesh Yadav</p>
+                <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+            </div>
+        </footer>
+
+        <script src="./index.js"></script>
     </body>
-    <script src="./index.js"></script>
 </html>
